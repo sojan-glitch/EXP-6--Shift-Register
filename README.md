@@ -20,6 +20,7 @@ else Q <= {Q[2:0], sin};   // shift left, sin enters at LSB
 Serial output: sout = Q[3]   (the bit about to be shifted out)
 
 ## Design / RTL Program
+```
 // gedit shift_reg.v
  
 module shift_reg (
@@ -38,10 +39,10 @@ module shift_reg (
  
     assign sout = Q[3];
 endmodule
-
+```
 
 ##Testbench Program
-
+```
 // gedit tb6.v
  
 module tb6;
@@ -93,7 +94,7 @@ module tb6;
     end
 endmodule
 
-
+```
 
 ## Operation / Truth Table
 
